@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kermal 3yonak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+  <div class="header-content">
+    <div class="header-flex">
+      <img src="./images/Red Minimalist Catering Logo (1).png" alt="kermal 3yonak Logo" class="logo" />
+      <div class="brand-text">
+        <div class="brand-name">kermal 3yonak</div>
+        <div class="brand-sub">Modern Lebanese Kitchen</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- FILTER BUTTONS -->
+  <div class="filters">
+    <div class="filters-wrapper">
+      <button class="filter-btn active" id="btn-all">All</button>
+      <button class="filter-btn" id="btn-starters">Starters</button>
+      <button class="filter-btn" id="btn-mains">Mains</button>
+      <button class="filter-btn" id="btn-drinks">Drinks</button>
+      <button class="filter-btn" id="btn-desserts">Desserts</button>
+    </div>
+  </div>
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+    
+    <!-- MENU SECTION -->
+    <main class="menu-section">
+      <p class="section-title" id="section-label">All Items</p>
+      <div class="menu-grid" id="menu-grid">
+        <!-- Cards are built by JavaScript -->
+      </div>
+    </main>
+
+    <!-- CART SECTION -->
+    <aside class="cart-section">
+      <div class="order-box">
+        <h2>Your Order</h2>
+        
+        <div id="order-list">
+          <p class="empty-msg">No items added yet.</p>
+        </div>
+
+        <div class="order-summary">
+          <div class="order-total">
+            <span>Subtotal</span>
+            <span id="total-amount">$0</span>
+          </div>
+          <div class="order-note">Tap to place order when ready</div>
+        </div>
+
+        <button class="place-btn" id="place-btn" disabled>PLACE ORDER</button>
+        <p id="message"></p>
+      </div>
+    </aside>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
